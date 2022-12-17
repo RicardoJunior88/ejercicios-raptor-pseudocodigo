@@ -1,0 +1,189 @@
+Ejemplo:Diseñar el pseudocódigo de un programa que sume dos números leídos por
+pantalla y muestre el resultado por terminal.
+  Programa: SumaNúmeros
+    Entorno: A  B y resultado son números enteros
+	Algoritmo:
+		Escribir "Introduzca dos números"
+		leer A y B
+		resultado = A+B
+		Escribir "el resultado es" resultado
+Finprograma
+-----------------------------------------------------------------------------------------
+Ejemplo:Hacer el pseudocódigo de un programa que permita leer 2 números diferentes y
+nos diga cual es el mayor de los 2 números.
+   Programa: Comparanúmeros
+      Entorno: A y B son números enteros
+ 	  Algoritmo:
+		  Escribir "introduzca dos números"
+		  leer A y B 
+		  SI A>B ENTONCES
+		      escribir "el número mayor es: "A
+		  SI NO
+			escribir "el número mayor es: "B
+		  FINSI
+       Finprograma
+-----------------------------------------------------------------------------------------------
+Ejemplo:Crear el pseudocódigo de un programa que almacenen 3 números en 3 variables
+A, B y C. El diagrama debe decidir cuál es el mayor y cuál es el menor.
+   Programa: ComparaMayorMenor
+   Entorno; A B y C son números enteros
+	Algoritmo:
+	      Escribir "introduzca tres números"
+	      leer A B y C
+		SI A>B Y A>C
+		    SI B>C 
+			escribir "el número mayor es: " +A+ "y el menor es: " +C
+		     SI NO
+			escribir "el número mayor es: " +A+ "y el menor es: " +B
+		     FINSI
+		SI NO
+		     SI B>C Y B>A 
+		        SI A>C
+		        escribir "el número mayor es: " +B+ "y el menor es: " +C
+		        SI NO
+			  escribir "el número mayor es: " +B+ "y el menor es: " +A
+			FINSI
+		SI NO
+			SI B>A
+			escribir "el número mayor es: " +C+ "y el menor es: " +A
+			SI NO 
+			escribir "el número mayor es: " +C+ "y el menor es: " +B
+			FINSI
+            FINSI
+FINPROGRAMA
+----------------------------------------------------------------------------------
+Ejemplo: Realizar el pseudocódigo de un programa que nos calcule la hipotenusa de un
+triángulo rectángulo, conocidos sus dos catetos.
+   Programa: CalcularHipotenusa
+   Entorno: cateto1, cateto2 e hipotenusa son números enteros
+	Algoritmo:
+  		Escribir "introducir el valor de los dos catetos"
+		leer cateto1 y cateto2
+		hipotenusa= raiz cuadrada((cateto1xcateto1)+(cateto2xcateto2))
+		escribir "la hipotenusa es = "+ hipotenusa
+FINPROGRAMA
+------------------------------------------------------------------------------------
+Ejemplo: Realiza el pseudocódigo de un programa que sume 10 números leídos por
+teclado.
+    Programa: Suma10Numeros
+    Entorno: A B C D E F G H I J y resultado son números enteros
+	Algoritmo:
+	   Escribir "introducir los 10 números a sumar"
+	   leer valor A B C D E F G H I J
+          Resultado = A+B+C+D+E+F+H+I+J
+	    Escribir "El resultado de la suma es =" + resultado
+FINPROGRAMA
+---------------------------------------------------------------------------------------
+Ejemplo: Modificar el anterior para que permita sumar N números. El valor de N se debe
+leer previamente por teclado.
+    Programa: SumaNnúmeros
+    Entorno: N B yA resultado son numeros enteros B=0 resultado =0
+	Algoritmo:
+	   Escribir "¿cuantos números quiere sumar?"
+	   Leer valor N
+	  1 SI B<N
+	    B=B+1
+	    escribir"introduzca número"
+          Leer A
+	    resultado= resultado+A
+	    volver al punto 1
+	    SI NO
+ 	       entonces escribir "la suma de todos los números es= " + resultado
+	    FINSI
+FINPROGRAMA
+------------------------------------------------------------------------------------------
+Ejemplo: Hacer el pseudocódigo de un programa que permita escribir los 100 primeros
+pares.
+      Programa: Suma100Pares
+	Entorno: B=0 A=0 resultado=0
+	   Algoritmo:
+           1 SI B<100
+			2 SI A%2=0
+        		   resultado=resultado+A
+			   B=B+1
+			   A=A+1
+			   volver al punto 1
+			  SI NO
+			    Entonces A=A+1
+	                volver a punto2
+			   FINSI
+             SI NO
+			Entonces escribir "el resultado es =" + resultado 
+             FINSI
+FINPROGRAMA
+--------------------------------------------------------------------------------------------		  			
+Ejemplo:Diseña el pseudocódigo necesario para sumar los N primeros impares. Realizar
+después uno que haga lo mismo con los pares y otro con los múltiplos de 3. Crea
+un menú para ello.
+   Programa: SumaImparesParesMultiplo3
+   Entorno: N y programa son números enteros, A=0 B=0
+	Algoritmo:
+	  1Escribir "introduzca una opción: 1)Sumar número impares 2)SUmar números pares 3)Sumar múltiplos de 3
+							cualquier otro número para salir del programa"
+			leer programa
+			SI programa= 1 ó 2 ó 3
+			   SI programa=1
+                        Escribir"cuantos números pares desea sumar"
+				Leer N
+					2 SI B<N
+						3 SI A%2=0
+        		   			resultado=resultado+A
+			   			B=B+1
+			   			A=A+1
+			   			volver al punto 2
+			  		 	SI NO
+			    		 	Entonces A=A+1
+	                		 	volver a punto3
+			   			FINSI
+             			  SI NO
+					  Entonces escribir "el resultado es =" + resultado 
+             			  FINSI
+					  Volver a punto 1
+			   SI NO
+		           SI programa=2
+					Escribir"cuantos números impares desea sumar"
+				Leer N
+					2 SI B<N
+						3 SI A%2!=0
+        		   			resultado=resultado+A
+			   			B=B+1
+			   			A=A+1
+			   			volver al punto 2
+			  		 	SI NO
+			    		 	Entonces A=A+1
+	                		 	volver a punto3
+			   			FINSI
+             			  SI NO
+					  Entonces escribir "el resultado es =" + resultado 
+             			  FINSI
+					  Volver a punto 1
+                                SI NO
+						SI programa=3
+							Escribir"cuantos números múltiplos de 3 desea sumar"
+				Leer N
+					2 SI B<N
+						3 SI A%3=0
+        		   			resultado=resultado+A
+			   			B=B+1
+			   			A=A+1
+			   			volver al punto 2
+			  		 	SI NO
+			    		 	Entonces A=A+1
+	                		 	volver a punto3
+			   			FINSI
+             			  SI NO
+					  Entonces escribir "el resultado es =" + resultado 
+             			  FINSI
+					  Volver a punto 1
+                                
+			SI NO 
+			   FINSI
+FIN programa
+-------------------------------------------------------------------------------------------------------------
+Ejemplo: Hacer el pseudocódigo de un programa que simule un reloj.
+                
+
+	    
+		
+
+
